@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">listViewCustomAdapter</string>
+    <string name="pec_deck">Pec Deck</string>
+    <string name="push_up">Push-up</string>
+    <string name="barbell_bench_press">Barbell Bench Press</string>
+    <string name="incline_barbell_bench_press">Incline Barbell Bench Press</string>
+    <string name="standing_cable_crossover">Standing Cable Crossove</string>
+    <string name="flat_bench_dumbbell_fly">Flat Bench Dumbbell Fly</string>
+    <string-array name="exercicios">
+        <item>@string/pec_deck</item>
+        <item>@string/push_up</item>
+        <item>@string/barbell_bench_press</item>
+        <item>@string/incline_barbell_bench_press</item>
+        <item>@string/standing_cable_crossover</item>
+        <item>@string/flat_bench_dumbbell_fly</item>
+    </string-array>
+</resources>
