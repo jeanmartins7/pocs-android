@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/exercicio_image"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/peck_deck"/>
+
+    <TextView
+        android:id="@+id/exercicio_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pec_deck"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/exercicio_image"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/exercicio_serie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_below="@+id/exercicio_nome"
+        android:layout_toRightOf="@+id/exercicio_image"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:layout_below="@+id/exercicio_nome"
+        android:layout_toRightOf="@+id/exercicio_image"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        />
+    <TextView
+        android:id="@+id/exercicio_repeticoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:layout_below="@+id/exercicio_nome"
+        android:layout_toRightOf="@+id/exercicio_image"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/exercicio_repouso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45"
+        android:layout_gravity="center"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/exercicio_image"/>
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="seg"
+        android:layout_gravity="center"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/exercicio_image"/>
+
+    <TextView
+        android:id="@+id/exercicio_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_below="@+id/exercicio_nome"
+        android:layout_toRightOf="@+id/exercicio_image"
+        android:layout_gravity="center"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:id="@+id/kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kg"
+        android:layout_below="@+id/exercicio_nome"
+        android:layout_toRightOf="@+id/exercicio_image"
+        android:layout_gravity="center"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="13dp"/>
+</RelativeLayout>

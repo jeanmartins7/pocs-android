@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/git/android/pocs-android/bambamApp/app/src/main/res/layout/activity_exercicios.xml" value="0.3625" />
         <entry key="..\:/git/android/pocs-android/bambamApp/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/git/android/pocs-android/bambamApp/app/src/main/res/layout/list_exercicio.xml" value="0.3625" />
       </map>
     </option>
   </component>

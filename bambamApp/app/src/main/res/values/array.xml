@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exercicio">
+        <item>@string/pec_deck</item>
+        <item>@string/push_up</item>
+        <item>@string/barbell_bench_press</item>
+        <item>@string/incline_barbell_bench_press</item>
+        <item>@string/standing_cable_crossover</item>
+        <item>@string/flat_bench_dumbbell_fly</item>
+    </string-array>
+
+    <string-array name="repeticoes">
+        <item>12</item>
+        <item>12</item>
+        <item>10</item>
+        <item>10</item>
+        <item>12</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="series">
+        <item>4</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="peso">
+        <item>12</item>
+        <item>0</item>
+        <item>10</item>
+        <item>10</item>
+        <item>6</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="repouso">
+        <item>45</item>
+        <item>30</item>
+        <item>45</item>
+        <item>45</item>
+        <item>45</item>
+        <item>45</item>
+    </string-array>
+</resources>
