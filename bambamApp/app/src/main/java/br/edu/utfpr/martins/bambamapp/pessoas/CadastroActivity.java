@@ -1,7 +1,8 @@
-package br.edu.utfpr.martins.bambamapp;
+package br.edu.utfpr.martins.bambamapp.pessoas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -11,7 +12,12 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+
+import br.edu.utfpr.martins.bambamapp.PrincipalActivity;
+import br.edu.utfpr.martins.bambamapp.R;
+
+public class CadastroActivity extends AppCompatActivity {
 
     private EditText editTextNome, editTextCell;
     private CheckBox cbMonday, cbTuesday, cbWednesday, cbThursday, cbFriday, cbSaturday;
@@ -105,19 +111,20 @@ public class MainActivity extends AppCompatActivity {
         return typeGender;
     }
 
-    private String getCheckbox(){
-        String checkBox = getString(R.string.days_checked)  + "\n";
+    private ArrayList<String> getCheckbox(){
+
+        ArrayList<String> checkBox = new ArrayList<>();
+
         if(!cbMonday.isChecked() && !cbTuesday.isChecked() && !cbWednesday.isChecked()&&
                 !cbThursday.isChecked() && !cbFriday.isChecked() && !cbSaturday.isChecked()){
             Toast.makeText(this, R.string.checkbox_clean, Toast.LENGTH_SHORT).show();
-            checkBox = "";
         }
-        if(cbMonday.isChecked()){checkBox += getString(R.string.monday) + "\n";}
-        if(cbTuesday.isChecked()){checkBox += getString(R.string.tuesday) + "\n";}
-        if(cbWednesday.isChecked()){checkBox += getString(R.string.wednesday) + "\n";}
-        if(cbThursday.isChecked()){checkBox += getString(R.string.thursday) + "\n";}
-        if(cbFriday.isChecked()){checkBox += getString(R.string.friday) + "\n";}
-        if(cbSaturday.isChecked()){checkBox += getString(R.string.saturday) + "\n";}
+        if(cbMonday.isChecked()){checkBox.add(getString(R.string.monday));}
+        if(cbTuesday.isChecked()){checkBox.add(getString(R.string.tuesday));}
+        if(cbWednesday.isChecked()){checkBox.add(getString(R.string.wednesday));}
+        if(cbThursday.isChecked()){checkBox.add(getString(R.string.thursday));}
+        if(cbFriday.isChecked()){checkBox.add(getString(R.string.friday));}
+        if(cbSaturday.isChecked()){checkBox.add(getString(R.string.saturday));}
 
         return checkBox;
 
@@ -165,17 +172,19 @@ public class MainActivity extends AppCompatActivity {
         String cell = getTextEditCellNumber();
         String name = getTextEditName();
         String gender = getRadioGroupGender();
-        String checkBox = getCheckbox();
-        String spinner = getSpinner();
+        ArrayList<String> checkBox = getCheckbox();
+        String activity = getSpinner();
 
-        if(!name.isEmpty() && !cell.isEmpty() && !gender.isEmpty() && !checkBox.equals("")
-                && !spinner.equals("")){
-            String message = getString(R.string.name) + " :" + name + "\n" +
-                    getString(R.string.cellphone) + " :" + cell + "\n" +
-                    getString(R.string.gender) + " :" + gender + "\n"
-                    + checkBox + "\n" + getString(R.string.training_spinner) + " :" + spinner + "\n";
+        if(!name.isEmpty() && !cell.isEmpty() && !gender.isEmpty() && !checkBox.isEmpty()
+                && !activity.equals("")){
 
-            Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, PrincipalActivity.class);
+
+            Pessoa pessoa = new Pessoa(name, cell, checkBox, gender, activity);
+
+            intent.putExtra("person", pessoa);
+
+            startActivity(intent);
         }
     }
 

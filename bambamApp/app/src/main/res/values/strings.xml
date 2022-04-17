@@ -38,6 +38,12 @@
     <string name="incline_barbell_bench_press">Incline Barbell Bench Press</string>
     <string name="standing_cable_crossover">Standing Cable Crossove</string>
     <string name="flat_bench_dumbbell_fly">Flat Bench Dumbbell Fly</string>
+    <string name="cadastrar_aluno">Cadastrar aluno</string>
+    <string name="about">Sobre</string>
+    <string name="autor_name_jean">Jean Marcel Peres Martins</string>
+    <string name="autor_email_jean">martinsj@alunos.utfpr.edu.br</string>
+    <string name="autor_curso_jean">Engenharia de Computação</string>
+    <string name="about_app">Um aplicativo para gerenciar treinos de alunos.</string>
     <string-array name="exercicios">
         <item>@string/pec_deck</item>
         <item>@string/push_up</item>

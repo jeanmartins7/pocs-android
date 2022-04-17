@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BambamApp">
         <activity
-            android:name=".MainActivity"
+            android:name=".AboutActivity"
             android:exported="false" />
         <activity
             android:name=".exerciciosView.ExerciciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pessoas.CadastroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
