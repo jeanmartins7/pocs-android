@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">transientActivity</string>
+    <string name="sobre">Sobre</string>
+    <string name="autor">Autor: Jean Marcel Peres Martins</string>
+    <string name="curso_autor">Curso: Engenharia de Computação</string>
+    <string name="email_autor">E-mail: martinsj@alunos.utfpr.edu.br</string>
+    <string name="sobre_objetivo">Aplicativo para salvar treinos de uma academia</string>
+    <string name="treinos">Treinos</string>
+</resources>

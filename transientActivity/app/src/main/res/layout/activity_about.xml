@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogoUtfpr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_utfpr" />
+
+    <TextView
+        android:id="@+id/textViewAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/autor"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewLogoUtfpr"
+        app:layout_constraintStart_toStartOf="@+id/imageViewLogoUtfpr"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogoUtfpr" />
+
+    <TextView
+        android:id="@+id/textViewCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/curso_autor"
+        app:layout_constraintEnd_toEndOf="@+id/textViewAutor"
+        app:layout_constraintStart_toStartOf="@+id/textViewAutor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAutor" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/email_autor"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCurso"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/textViewCurso"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCurso" />
+
+    <TextView
+        android:id="@+id/textViewAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/sobre_objetivo"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmail"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
